@@ -3,5 +3,8 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="OpenGL_rendering.vcxproj" />
+  <Folder Name="/Solution Items/">
+    <File Path="vcpkg.json" />
+  </Folder>
+  <Project Path="OpenGL_rendering.vcxproj" Id="d498d9b5-f21e-4c2d-bf25-3f5688d13f00" />
 </Solution>

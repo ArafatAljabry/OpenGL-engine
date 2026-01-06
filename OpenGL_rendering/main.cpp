@@ -51,6 +51,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
+
 	/******************************************* Creating and compiling shaders*****************************************/
 
 	//	Vertex shader
@@ -107,6 +108,8 @@ int main()
 	//Telling openGL how it should the vertex data input
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0); //They are disbled by default
+
+
 	/******************************************* Creating a window***********************/
 										//Width, Height, Window title	
 	GLFWwindow* window = glfwCreateWindow(window_width, window_height, "Learning OpenGL", NULL, NULL);
@@ -130,7 +133,7 @@ int main()
 	}
 
 	//The actual rendering viewport
-	glViewport(0, 0, 800, 600);
+	glViewport(0, 0,window_width, window_height);
 
 	//Callback function that runs when window is resized
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
